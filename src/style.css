@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: #CBE4DE;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: #1a1a1a;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+li {
+    padding: 12px;
+
+    text-align: center;
+    background-color: #2E4F4F;
+    border-radius: 8px;
+
+    transition: 0.2s all;
+}
+
+li:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+li:has(a:focus) {
+    opacity: 80%;
+}
+
+a:focus {
+    outline: none;
+}
+
+
+.card {
+    flex-grow: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 24px;
+    padding: 32px;
+
+    background-color: #2C3333;
+    border-radius: 16px;
+}
+
+.profile-photo {
+    height: 80px;
+    width: 80px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    border-radius: 90px;
+}
+
+.profile-name {
+    margin-bottom: 8px;
+}
+
+.profile-location {
+    opacity: 60%;
+}
+
+.profile-location, .profile-description {
+    margin-bottom: 16px;
+}
